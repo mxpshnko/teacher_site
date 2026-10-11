@@ -1,0 +1,20 @@
+.extra {
+    background-color: var(--color-white);
+    border-left: 4px solid var(--color-gold);
+    padding: 95px 75px;
+}
+
+.extra_title {
+    font-family: var(--font-family-h);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.extra_columns {
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}

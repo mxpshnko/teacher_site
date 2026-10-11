@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+--color-bg: #F4F1EA;
+--color-navy: #1B2A41;
+--color-navy-dark: #12203A;
+--color-gold: #C9A227;
+--color-text: #2B2B2B;
+--color-text-muted: #5A6478;
+--color-white: #FFFFFF;
+
+--font-family-h: "Montserrat", sans-serif;
+--font-family-text: "IBM Plex Sans", sans-serif;
+
+--font-size-h1: 48px;
+--font-size-h2: 36px;
+--font-size-menu: 22px;
+--font-size-p: 22px;
+
+--width: 1440px;
+}

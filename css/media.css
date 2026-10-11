@@ -1,0 +1,140 @@
+@media (max-width: 1023px) {
+
+    :root {
+        --font-size-h1: 40px;
+        --font-size-h2: 30px;
+        --font-size-menu: 20px;
+        --font-size-p: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .main {
+        flex: none;
+    }
+
+    .menu {
+        order: -1;
+        flex: none;
+        min-width: 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 14px 24px;
+    }
+
+    .menu ul {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 28px;
+        border-top: none;
+        padding-bottom: 20px;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .header {
+        padding: 30px 40px 30px;
+    }
+
+    .content {
+        padding: 0 32px 0 80px;
+    }
+
+    .content_box {
+        scroll-margin-top: 5rem;
+    }
+    
+    .content_title::before {
+        left: -58px;
+    }
+
+    .extra {
+        padding: 48px 40px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    :root {
+        --font-size-h1: 32px;
+        --font-size-h2: 24px;
+        --font-size-menu: 18px;
+        --font-size-p: 18px;
+    }
+
+    .menu { 
+        padding: 12px 20px;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 2px solid var(--color-gold);
+    }
+
+    .menu a {
+        padding: 8px 0;
+    }
+
+    .burger_menu:checked ~ ul {
+        display: flex;
+    }
+
+    .header {
+        padding: 32px 20px 24px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .content_box {
+        padding: 36px 0;
+    }
+
+    .content_title::before {
+        position: static;
+        margin-right: 14px;
+    }
+
+    .content_photo {
+        margin: 20px auto;
+    }
+
+    .disc_item,
+    .pub_list li {
+        padding-left: 47px;
+    }
+
+    .pub_list li {
+        font-size: 16px;
+    }
+
+    .schedule {
+        min-width: 45rem;
+    }
+
+    .extra {
+        padding: 32px 20px;
+    }
+
+    .extra_columns {
+        font-size: 16px;
+        gap: 20px;
+    }
+}

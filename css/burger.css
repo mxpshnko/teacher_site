@@ -1,0 +1,56 @@
+.burger_menu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu_btn {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-white);
+    transition-duration: 0.25s;
+}
+
+.menu_btn > span {
+    top: 14px;
+}
+
+.menu_btn > span::before {
+    content: ""; top: -8px; 
+}
+
+.menu_btn > span::after  { 
+    content: ""; top: 8px; 
+}
+
+.burger_menu:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+}
+
+.burger_menu:checked ~ .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+.burger_menu:checked ~ .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.burger_menu:focus-visible ~ .menu_btn {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 4px;
+}

@@ -1,0 +1,26 @@
+@import url(reset.css);
+@import url(base.css);
+@import url(header.css);
+@import url(menu.css);
+@import url(content.css);
+@import url(extra.css);
+@import url(footer.css);
+@import url(layout.css);
+@import url(burger.css);
+@import url(timeline.css);
+@import url(stats.css);
+@import url(gallery.css);
+@import url(reviews.css);
+@import url(form.css);
+@import url(media.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+}

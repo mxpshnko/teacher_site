@@ -1,0 +1,36 @@
+.header {
+    background-color: var(--color-navy);
+    padding: 45px 60px;
+}
+
+.header_label {
+    font-family: var(--font-family-h);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: 10px;
+}
+
+.header_name {
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.header_position {
+    font-family: var(--font-family-h);
+    font-size: 18px;
+    color: var(--color-white);
+    margin-top: 8px;
+}
+
+.header_position::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--color-gold);
+    margin-top: 14px;
+}

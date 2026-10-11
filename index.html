@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сторінка викладача</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="menu">
+            <input type="checkbox" id="burger-menu" class="burger_menu">
+            <label for="burger-menu" class="menu_btn"><span></span></label>
+            <ul>
+                <li><a href="#bio">Біографія</a></li>
+                <li><a href="#timeline">Академічний шлях</a></li>
+                <li><a href="#stats">Викладач у цифрах</a></li>
+                <li><a href="#disciplines">Інформація про дисципліни</a></li>
+                <li><a href="#schedule">Розклад занять</a></li>
+                <li><a href="#gallery">Студентські проєкти</a></li>
+                <li><a href="#publications">Список наукових публікацій</a></li>
+                <li><a href="#reviews">Відгуки студентів</a></li>
+                <li><a href="#consultation">Запис на консультацію</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+
+            <header class="header">
+                <p class="header_label">Персональна сторінка викладача</p>
+                <h1 class="header_name">Олександр Коваленко</h1>
+                <p class="header_position">Доцент кафедри програмної інженерії</p>
+            </header>
+
+            <main class="content">
+
+                <section class="content_box" id="bio">
+                    <h2 class="content_title">Біографія</h2>
+                    <p class="content_p">Олександр Коваленко - доцент кафедри програмної інженерії, дослідник і викладач, який поєднує академічні знання з практикою створення сучасних цифрових продуктів.</p>
+                    <img class="content_photo" src="img/img1.jpg" alt="Олександр Коваленко">
+                    <p class="content_p">Його наукові інтереси охоплюють архітектуру програмного забезпечення, інженерію вимог та методи забезпечення якості. У викладанні особливу увагу приділяє критичному мисленню, співпраці та застосуванню знань на практиці.</p>
+                </section>
+
+                <section class="content_box" id="timeline">
+                    <h2 class="content_title">Академічний шлях</h2>
+                    <p class="content_p">Ключові етапи професійного шляху: від навчання до керівництва навчальною програмою.</p>
+
+                    <ol class="timeline">
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2008">2008</time>
+                                <h3 class="timeline_title">Бакалавр програмної інженерії</h3>
+                                <p class="timeline_text">Початок шляху в галузі: алгоритми, бази даних та основи розробки програмних систем.</p>
+                            </article>
+                        </li>
+
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2010">2010</time>
+                                <h3 class="timeline_title">Магістр з відзнакою</h3>
+                                <p class="timeline_text">Спеціалізація з архітектури програмного забезпечення та інженерії вимог.</p>
+                            </article>
+                        </li>
+
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2014">2014</time>
+                                <h3 class="timeline_title">Захист кандидатської дисертації</h3>
+                                <p class="timeline_text">Дослідження методів забезпечення якості програмних систем.</p>
+                            </article>
+                        </li>
+
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2016">2016</time>
+                                <h3 class="timeline_title">Асистент кафедри</h3>
+                                <p class="timeline_text">Початок викладацької діяльності, перші авторські курси.</p>
+                            </article>
+                        </li>
+
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2019">2019</time>
+                                <h3 class="timeline_title">Доцент кафедри програмної інженерії</h3>
+                                <p class="timeline_text">Розробка нових навчальних дисциплін і керівництво дипломними проєктами.</p>
+                            </article>
+                        </li>
+
+                        <li class="timeline_item">
+                            <article class="timeline_card">
+                                <time class="timeline_year" datetime="2023">2023</time>
+                                <h3 class="timeline_title">Керівник навчальної програми</h3>
+                                <p class="timeline_text">Оновлення програми за вимогами індустрії та запуск проєктних практикумів.</p>
+                            </article>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="content_box" id="stats">
+                    <h2 class="content_title">Викладач у цифрах</h2>
+                    <p class="content_p">Показники викладацької та наукової діяльності.</p>
+
+                    <ul class="stats">
+                        <li class="stat">
+                            <p class="stat_value">10</p>
+                            <p class="stat_label">років викладацького досвіду</p>
+                        </li>
+
+                        <li class="stat">
+                            <p class="stat_value">1200+</p>
+                            <p class="stat_label">студентів, що пройшли навчання</p>
+                        </li>
+
+                        <li class="stat">
+                            <p class="stat_value">24</p>
+                            <p class="stat_label">наукові публікації</p>
+                        </li>
+
+                        <li class="stat">
+                            <p class="stat_value">4.8<span class="stat_unit"> / 5</span></p>
+                            <p class="stat_label">середня оцінка студентів</p>
+                            <meter class="stat_bar" min="0" max="5" value="4.8"></meter>
+                        </li>
+                    
+                        <li class="stat">
+                            <p class="stat_value">90%</p>
+                            <p class="stat_label">виконання навчального плану цього семестру</p>
+                            <progress class="stat_bar" max="100" value="90"></progress>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content_box" id="disciplines">
+                    <h2 class="content_title">Інформація про дисципліни</h2>
+                    <p class="content_p">Навчальні курси зосереджені на повному циклі створення програмних продуктів - від першої ідеї до надійної реалізації.</p>
+                    <ol class="disc_list">
+                        <li class="disc_item">
+                            <article>
+                                <h3 class="disc_name">Основи програмної інженерії</h3>
+                                <p class="disc_text">Архітектура програмних систем, процеси розробки та командна робота.</p>
+                            </article>
+                        </li>
+                            
+                        <li class="disc_item">
+                            <article>
+                                <h3 class="disc_name">Проєктування програмного забезпечення</h3>
+                                <p class="disc_text">Методи моделювання, патерни проєктування та якість коду.</p>
+                            </article>
+                        </li>
+
+                        <li class="disc_item">
+                            <article>
+                                <h3 class="disc_name">Інженерія вимог</h3>
+                                <p class="disc_text">Аналіз потреб, специфікація та управління змінами у проєктах.</p>
+                            </article>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="content_box" id="schedule">
+                    <h2 class="content_title">Розклад занять</h2>
+                    <p class="content_p">Актуальний розклад занять на весняний семестр 2026 року.</p>
+                    <div class="schedule_wrap">
+                        <table class="schedule">
+                            <thead>
+                                <tr>
+                                    <th>День</th>
+                                    <th>Час</th>
+                                    <th>Дисципліна</th>
+                                    <th>Формат</th>
+                                    <th>Місце</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Понеділок</td>
+                                    <td>10:00-11:20</td>
+                                    <td>Основи програмної інженерії</td>
+                                    <td>Лекція</td>
+                                    <td>Ауд. 105</td>
+                                </tr>
+                                <tr>
+                                    <td>Вівторок</td>
+                                    <td>12:00-13:20</td>
+                                    <td>Проєктування програмного забезпечення</td>
+                                    <td>Практичне</td>
+                                    <td>Ауд. 308</td>
+                                </tr>
+                                <tr>
+                                    <td>Середа</td>
+                                    <td>10:00-11:20</td>
+                                    <td>Інженерія вимог</td>
+                                    <td>Лекція</td>
+                                    <td>Ауд. 214</td>
+                                </tr>
+                                <tr>
+                                    <td>П’ятниця</td>
+                                    <td>14:00-15:20</td>
+                                    <td>Основи програмної інженерії</td>
+                                    <td>Практичне</td>
+                                    <td>Ауд. 306</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="content_box" id="gallery">
+                    <h2 class="content_title">Студентські проєкти</h2>
+                    <p class="content_p">Роботи студентів, виконані на курсах під моїм керівництвом.</p>
+
+                    <ul class="gallery_grid">
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project1.jpg" alt="перший" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Основи ПІ</span>
+                                    <h3 class="gallery_title">Система обліку відвідуваності</h3>
+                                    <p class="gallery_text">Вебзастосунок для відмітки присутності студентів на заняттях.</p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project2.jpg" alt="другий" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Проєктування ПЗ</span>
+                                    <h3 class="gallery_title">Мобільний застосунок розкладу</h3>
+                                    <p class="gallery_text">Зручний перегляд занять і сповіщення про зміни в розкладі.</p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project3.jpg" alt="третій" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Інженерія вимог</span>
+                                    <h3 class="gallery_title">Платформа збору вимог</h3>
+                                    <p class="gallery_text">Інструмент для фіксації та узгодження вимог замовника з командою.</p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project4.jpg" alt="четвертий" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Проєктування ПЗ</span>
+                                    <h3 class="gallery_title">Чат-бот для абітурієнтів</h3>
+                                    <p class="gallery_text">Автоматичні відповіді на типові запитання вступників.</p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project5.jpg" alt="п'ятий" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Основи ПІ</span>
+                                    <h3 class="gallery_title">Дашборд успішності</h3>
+                                    <p class="gallery_text">Візуалізація оцінок і відвідуваності по групах та дисциплінах.</p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="gallery_card">
+                                <figure class="gallery_figure">
+                                    <img class="gallery_img" src="img/project6.jpg" alt="шостий" loading="lazy">
+                                </figure>
+                                <div class="gallery_body">
+                                    <span class="gallery_tag">Інженерія вимог</span>
+                                    <h3 class="gallery_title">Каталог навчальних ресурсів</h3>
+                                    <p class="gallery_text">Структурована добірка матеріалів з пошуком за темами курсів.</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="content_box" id="publications">
+                    <h2 class="content_title">Список наукових публікацій</h2>
+                    <ol class="pub_list">
+                        <li>Коваленко О. В. Підходи до забезпечення якості програмних систем у гнучких командах.<br>Вісник сучасних інформаційних технологій, 2025.</li>
+                        <li>Коваленко О. В., Мельник І. П. Моделювання вимог у процесі розробки освітніх платформ.<br>Наукові записки з комп’ютерних наук, 2024.</li>
+                        <li>Коваленко О. В. Практики архітектурного проєктування розподілених застосунків.<br>Інформаційні системи та технології, 2023.</li>
+                    </ol>
+                </section>
+
+                <section class="content_box" id="reviews">
+                    <h2 class="content_title">Відгуки студентів</h2>
+                    <p class="content_p">Що кажуть студенти після проходження навчання.</p>
+
+                    <ul class="reviews">
+                        <li>
+                            <article class="review_card">
+                                <p class="review_stars" role="img">★★★★★</p>
+                                <blockquote class="review_quote">
+                                    <p>Складний матеріал пояснюється на реальних прикладах, а після лекцій одразу розумієш, як застосувати його в проєкті.</p>
+                                </blockquote>
+                                <footer class="review_author">
+                                    <span class="review_avatar" >ОП</span>
+                                    <div>
+                                        <p class="review_name">Оксана Петренко</p>
+                                        <p class="review_course">Основи програмної інженерії</p>
+                                    </div>
+                                </footer>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="review_card">
+                                <p class="review_stars" role="img">★★★★★</p>
+                                <blockquote class="review_quote">
+                                    <p>Практичні заняття - це справжня командна розробка. Саме тут я навчився працювати з вимогами та відгуками замовника.</p>
+                                </blockquote>
+                                <footer class="review_author">
+                                    <span class="review_avatar" >АШ</span>
+                                    <div>
+                                        <p class="review_name">Андрій Шевчук</p>
+                                        <p class="review_course">Інженерія вимог</p>
+                                    </div>
+                                </footer>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="review_card">
+                                <p class="review_stars" role="img">★★★★<span class="review_star_off">★</span></p>
+                                <blockquote class="review_quote">
+                                    <p>Викладач завжди готовий допомогти й дає чіткий зворотний зв'язок. Інколи бракувало часу на складніші теми.</p>
+                                </blockquote>
+                                <footer class="review_author">
+                                    <span class="review_avatar" >МЛ</span>
+                                    <div>
+                                        <p class="review_name">Марія Лисенко</p>
+                                        <p class="review_course">Проєктування програмного забезпечення</p>
+                                    </div>
+                                </footer>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="review_card">
+                                <p class="review_stars" role="img">★★★★★</p>
+                                <blockquote class="review_quote">
+                                    <p>Курс змінив моє уявлення про якість коду. Тепер я проєктую систему ще до того, як пишу перший рядок.</p>
+                                </blockquote>
+                                <footer class="review_author">
+                                    <span class="review_avatar" >ДБ</span>
+                                    <div>
+                                        <p class="review_name">Денис Бондар</p>
+                                        <p class="review_course">Проєктування програмного забезпечення</p>
+                                    </div>
+                                </footer>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content_box" id="consultation">
+                    <h2 class="content_title">Запис на консультацію</h2>
+                    <p class="content_p">Заповніть форму, і я підтверджу зручний час відповіддю на e-mail. Консультації проходять у вівторок, 15:00-17:00.</p>
+
+                    <form class="form" action="#consultation" method="get">
+                       
+                        <div class="form_field">
+                            <label class="form_label" for="f-name">Ім'я та прізвище<span class="form_req">*</span></label>
+                            <input class="form_input" type="text" name="name" id="f-name"
+                                   required minlength="2" maxlength="50"
+                                   pattern="[А-Яа-яІіЇїЄєҐґA-Za-z'’\- ]{2,50}"
+                                   title="Лише літери, пробіл, апостроф або дефіс (від 2 до 50 символів)"
+                                   autocomplete="name" placeholder="Сергій Черненко">
+                        </div>
+
+                        <div class="form_field">
+                            <label class="form_label" for="f-email">E-mail <span class="form_req">*</span></label>
+                            <input class="form_input" type="email" name="email" id="f-email"
+                                   required autocomplete="email" placeholder="name@example.com">
+                                   
+                        </div>
+
+                        <div class="form_field">
+                            <label class="form_label" for="f-phone">Телефон</label>
+                            <input class="form_input" type="tel" name="phone" id="f-phone"
+                                   pattern="(\+38)?0\d{9}" title="Формат: 0501234567 або +380501234567"
+                                   autocomplete="tel" placeholder="0501234567">
+                            <span class="form_hint" id="f-phone-hint">Необов'язково. Формат: 0501234567 або +380501234567</span>
+                        </div>
+                    
+                        <div class="form_field">
+                            <label class="form_label" for="f-course">Курс <span class="form_req">*</span></label>
+                            <select class="form_input" id="f-course" name="course" required>
+                                <option value="" disabled selected>Оберіть курс</option>
+                                <option value="1">Основи програмної інженерії</option>
+                                <option value="2">Проєктування програмного забезпечення</option>
+                                <option value="3">Інженерія вимог</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+
+                        <div class="form_field form_field--full">
+                            <label class="form_label" for="f-message">Ваше питання <span class="form_req">*</span></label>
+                            <textarea class="form_input" id="f-message" name="message" rows="5"
+                                      required minlength="10" maxlength="500"
+                                      placeholder="Коротко опишіть, що хочете обговорити">
+                            </textarea>
+                        </div>
+
+                        <div class="form_field form_field--full form_check">
+                            <input class="form_checkbox" type="checkbox" id="f-consent" name="consent" required>
+                            <label for="f-consent">Погоджуюсь на обробку персональних даних <span class="form_req">*</span></label>
+                        </div>
+
+                        <div class="form_actions">
+                            <button class="form_btn" type="submit">Записатися</button>
+                            <p class="form_note">* Обов'язкові поля</p>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <aside class="extra">
+                <h2 class="extra_title">Консультації та контакти</h2>
+                <div class="extra_columns">
+                    <p>Вівторок, 15:00-17:00<br>Кабінет 412, корпус № 4</p>
+                    <p>Електронна пошта<br>kovalenko@uni.ua</p>
+                </div>
+            </aside>
+
+            <footer class="footer">
+                <p>© 2026 Коваленко О.</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>

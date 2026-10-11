@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}

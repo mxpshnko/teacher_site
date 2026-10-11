@@ -1,0 +1,161 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.form_field {
+    flex: 1 1 calc((100% - 20) / 2);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form_field--full {
+    flex-basis: 100%;
+}
+
+.form_label {
+    font-family: var(--font-family-h);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.form_req {
+    color: rgb(189, 23, 23);
+}
+
+.form_input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--color-white);
+    border: 2px solid #D9D4C5;
+    border-radius: 0;
+    font-family: var(--font-family-text);
+    font-size: 16px;
+    color: var(--color-text);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form_input::placeholder {
+    color: rgb(134, 134, 162);
+}
+
+.form_input:hover {
+    border-color: var(--color-gold);
+}
+
+.form_input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(135, 109, 21, 0.35);
+}
+
+.form_input:user-invalid {
+    border-color: red;
+}
+
+textarea.form_input {
+    min-height: 140px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+select.form_input {
+    padding-right: 0;
+}
+
+select.form_input:invalid {
+  color: #7A8194;
+}
+
+select.form_input option {
+  color: var(--color-text);
+}
+
+.form_hint {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.form_check {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.form_checkbox {
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    accent-color: var(--color-navy);
+    cursor: pointer;
+}
+
+.form_check label {
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.form_actions {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 24px;
+}
+
+.form_btn {
+    padding: 16px 40px;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    font-family: var(--font-family-h);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.form_btn:hover {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+}
+
+.form_btn:active {
+    transform: translateY(5px);
+}
+
+.form_btn:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+.form_note {
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 767px) {
+    .form {
+        gap: 15px;
+    }
+
+    .form_field {
+        flex-basis: 100%;
+    }
+
+    .form_input {
+        padding: 12px 14px;
+    }
+
+    .form_btn {
+        width: 100%;
+    }
+}
